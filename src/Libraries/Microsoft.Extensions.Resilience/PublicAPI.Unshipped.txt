@@ -1,0 +1,78 @@
+Microsoft.Extensions.Resilience.FailureResultContext
+Microsoft.Extensions.Resilience.FailureResultContext.AdditionalInformation.get -> string
+Microsoft.Extensions.Resilience.FailureResultContext.FailureReason.get -> string
+Microsoft.Extensions.Resilience.FailureResultContext.FailureResultContext() -> void
+Microsoft.Extensions.Resilience.FailureResultContext.FailureSource.get -> string
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsBase
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsBase.ChaosPolicyOptionsBase() -> void
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsBase.Enabled.get -> bool
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsBase.Enabled.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsBase.FaultInjectionRate.get -> double
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsBase.FaultInjectionRate.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup.ChaosPolicyOptionsGroup() -> void
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup.CustomResultPolicyOptions.get -> Microsoft.Extensions.Resilience.FaultInjection.CustomResultPolicyOptions
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup.CustomResultPolicyOptions.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup.ExceptionPolicyOptions.get -> Microsoft.Extensions.Resilience.FaultInjection.ExceptionPolicyOptions
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup.ExceptionPolicyOptions.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup.HttpResponseInjectionPolicyOptions.get -> Microsoft.Extensions.Resilience.FaultInjection.HttpResponseInjectionPolicyOptions
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup.HttpResponseInjectionPolicyOptions.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup.LatencyPolicyOptions.get -> Microsoft.Extensions.Resilience.FaultInjection.LatencyPolicyOptions
+Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup.LatencyPolicyOptions.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.CustomResultPolicyOptions
+Microsoft.Extensions.Resilience.FaultInjection.CustomResultPolicyOptions.CustomResultKey.get -> string
+Microsoft.Extensions.Resilience.FaultInjection.CustomResultPolicyOptions.CustomResultKey.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.CustomResultPolicyOptions.CustomResultPolicyOptions() -> void
+Microsoft.Extensions.Resilience.FaultInjection.ExceptionPolicyOptions
+Microsoft.Extensions.Resilience.FaultInjection.ExceptionPolicyOptions.ExceptionKey.get -> string
+Microsoft.Extensions.Resilience.FaultInjection.ExceptionPolicyOptions.ExceptionKey.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.ExceptionPolicyOptions.ExceptionPolicyOptions() -> void
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionExtensions
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptions
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptions.ChaosPolicyOptionsGroups.get -> System.Collections.Generic.IDictionary<string, Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup>
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptions.ChaosPolicyOptionsGroups.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptions.FaultInjectionOptions() -> void
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder.AddCustomResult(string key, object customResult) -> Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder.AddException(string key, System.Exception exception) -> Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder.Configure() -> Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder.Configure(Microsoft.Extensions.Configuration.IConfiguration section) -> Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder.Configure(System.Action<Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptions> configureOptions) -> Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder
+Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder.FaultInjectionOptionsBuilder(Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> void
+Microsoft.Extensions.Resilience.FaultInjection.FaultPolicyWeightAssignmentsOptions
+Microsoft.Extensions.Resilience.FaultInjection.FaultPolicyWeightAssignmentsOptions.FaultPolicyWeightAssignmentsOptions() -> void
+Microsoft.Extensions.Resilience.FaultInjection.FaultPolicyWeightAssignmentsOptions.WeightAssignments.get -> System.Collections.Generic.IDictionary<string, double>
+Microsoft.Extensions.Resilience.FaultInjection.FaultPolicyWeightAssignmentsOptions.WeightAssignments.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.HttpResponseInjectionPolicyOptions
+Microsoft.Extensions.Resilience.FaultInjection.HttpResponseInjectionPolicyOptions.HttpContentKey.get -> string
+Microsoft.Extensions.Resilience.FaultInjection.HttpResponseInjectionPolicyOptions.HttpContentKey.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.HttpResponseInjectionPolicyOptions.HttpResponseInjectionPolicyOptions() -> void
+Microsoft.Extensions.Resilience.FaultInjection.HttpResponseInjectionPolicyOptions.StatusCode.get -> System.Net.HttpStatusCode
+Microsoft.Extensions.Resilience.FaultInjection.HttpResponseInjectionPolicyOptions.StatusCode.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.IChaosPolicyFactory
+Microsoft.Extensions.Resilience.FaultInjection.IChaosPolicyFactory.CreateCustomResultPolicy<TResult>() -> Polly.Contrib.Simmy.Outcomes.AsyncInjectOutcomePolicy<TResult>
+Microsoft.Extensions.Resilience.FaultInjection.IChaosPolicyFactory.CreateExceptionPolicy() -> Polly.Contrib.Simmy.Outcomes.AsyncInjectOutcomePolicy
+Microsoft.Extensions.Resilience.FaultInjection.IChaosPolicyFactory.CreateLatencyPolicy<TResult>() -> Polly.Contrib.Simmy.Latency.AsyncInjectLatencyPolicy<TResult>
+Microsoft.Extensions.Resilience.FaultInjection.IFaultInjectionOptionsProvider
+Microsoft.Extensions.Resilience.FaultInjection.IFaultInjectionOptionsProvider.TryGetChaosPolicyOptionsGroup(string optionsGroupName, out Microsoft.Extensions.Resilience.FaultInjection.ChaosPolicyOptionsGroup optionsGroup) -> bool
+Microsoft.Extensions.Resilience.FaultInjection.InjectedFaultException
+Microsoft.Extensions.Resilience.FaultInjection.InjectedFaultException.InjectedFaultException() -> void
+Microsoft.Extensions.Resilience.FaultInjection.InjectedFaultException.InjectedFaultException(string message) -> void
+Microsoft.Extensions.Resilience.FaultInjection.InjectedFaultException.InjectedFaultException(string message, System.Exception innerException) -> void
+Microsoft.Extensions.Resilience.FaultInjection.LatencyPolicyOptions
+Microsoft.Extensions.Resilience.FaultInjection.LatencyPolicyOptions.Latency.get -> System.TimeSpan
+Microsoft.Extensions.Resilience.FaultInjection.LatencyPolicyOptions.Latency.set -> void
+Microsoft.Extensions.Resilience.FaultInjection.LatencyPolicyOptions.LatencyPolicyOptions() -> void
+Microsoft.Extensions.Resilience.Resilience.ResilienceContextExtensions
+Microsoft.Extensions.Resilience.ResilienceServiceCollectionExtensions
+static Microsoft.Extensions.Resilience.FailureResultContext.Create(string failureSource = "unknown", string failureReason = "unknown", string additionalInformation = "unknown") -> Microsoft.Extensions.Resilience.FailureResultContext
+static Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionExtensions.AddFaultInjection(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionExtensions.AddFaultInjection(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration section) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionExtensions.AddFaultInjection(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, System.Action<Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionOptionsBuilder> configure) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionExtensions.GetFaultInjectionGroupName(this Polly.Context context) -> string
+static Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionExtensions.WithFaultInjection(this Polly.Context context, Microsoft.Extensions.Resilience.FaultInjection.FaultPolicyWeightAssignmentsOptions weightAssignments) -> Polly.Context
+static Microsoft.Extensions.Resilience.FaultInjection.FaultInjectionExtensions.WithFaultInjection(this Polly.Context context, string groupName) -> Polly.Context
+static Microsoft.Extensions.Resilience.Resilience.ResilienceContextExtensions.GetRequestMetadata(this Polly.ResilienceContext context) -> Microsoft.Extensions.Http.Telemetry.RequestMetadata
+static Microsoft.Extensions.Resilience.Resilience.ResilienceContextExtensions.SetRequestMetadata(this Polly.ResilienceContext context, Microsoft.Extensions.Http.Telemetry.RequestMetadata requestMetadata) -> void
+static Microsoft.Extensions.Resilience.ResilienceServiceCollectionExtensions.AddResilienceEnrichment(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
+static Microsoft.Extensions.Resilience.ResilienceServiceCollectionExtensions.ConfigureFailureResultContext<TResult>(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, System.Func<TResult, Microsoft.Extensions.Resilience.FailureResultContext> configure) -> Microsoft.Extensions.DependencyInjection.IServiceCollection
